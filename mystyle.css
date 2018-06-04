@@ -1,0 +1,31 @@
+
+.six{
+	background-color: #505393;
+	width: 100%;
+	height: 1000px;
+}
+.six h2{
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 100px;
+	font-family:"Times New Roman", Times, serif;
+}
+.six p{
+	text-align: center;
+	color: #FFFFFF;
+	padding-top: 20px;
+	font-size: 16px;
+}
+.six_ul{
+	width: 80%;
+	margin: auto;
+}
+th{
+	text-align: center;
+	height: 200px;
+	background-color: rgba(0, 0, 0, 0.035);
+    color:white;
+}
+table, th, td{
+    border: 1px solid #B15BFF;
+}

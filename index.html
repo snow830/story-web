@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>小说大全集</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+
+   <style>
+   .body{
+   	padding-top: 50px;
+
+   }
+
+   .carousel{
+   	height: 500px;
+   	background-color: #000;
+   	margin-bottom: 60px;
+   }
+
+   .carousel .item{
+   	height: 500px;
+   	background-color: #000;
+   }
+
+   .carousel img{
+   	height: 100%;
+   	width: 100%
+   }
+
+   .carousel-caption p{
+   	margin-bottom: 15px;
+   	font-size: 15px;
+   	line-height: 1.8px;
+   }
+
+   .summary .col-md-3 {
+    text-align: center;
+    margin-bottom: 20px;
+   }
+
+   .summary {
+    padding-right: 15px;
+    padding-left: 15px;
+   }
+
+   .summary-row img{
+   	height: 25%;
+   	width: 40%;
+   }
+
+   .hr-divider{
+   	margin: 40px 0;
+   }
+
+   .feature{
+   	padding: 40px 0;
+   }
+
+   .feature-heading{
+   	font-size: 50px;
+   	color: #2a6496;
+   	margin-top: 60px;
+   }
+
+   .feature-heading .text-muted {
+    font-size: 28px;
+   }
+
+   .biaoqian img{
+   	height: 60%;
+   	width: 60%;
+   }
+
+   footer{
+   	text-align:center; 
+   	background-color:#D4D4D4; 
+   	line-height:24px; 
+   	padding:50px 0;
+   }
+
+   </style>
+
+
+</head>
+<body>
+<div class="body">
+
+<!-- 顶部导航 -->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="menu-nav">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">小说大合集</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#ad-carousel">穿越</a></li>
+                <li><a href="#summary-container">玄幻</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">快穿 <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#feature-tab" data-tab="tab-chrome">综武侠</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-firefox">系统</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-safari">综英美</a></li>
+                        <li><a href="#feature-tab" data-tab="tab-opera">剑三同人</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#feature-tab" data-tab="tab-ie">耽美</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" data-toggle="modal" data-target="#about-modal">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 广告轮播 -->
+<div id="ad-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#ad-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#ad-carousel" data-slide-to="1"></li>
+        <li data-target="#ad-carousel" data-slide-to="2"></li>
+        <li data-target="#ad-carousel" data-slide-to="3"></li>
+        <li data-target="#ad-carousel" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="images/p1.jpg" alt="1 slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>盗墓笔记</h1>
+                    <p>盗墓笔记：无邪，张起灵</p>
+                    <p><a class="btn btn-lg btn-primary" href="http://www.seputu.com/" role="button" target="_blank">点击阅读</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/p2.jpg" alt="2 slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>斗罗大陆</h1>
+                    <p>斗罗大陆：唐三，小舞</p>
+                    <p><a class="btn btn-lg btn-primary" href="http://www.biquge.info/10_10218/" target="_blank" role="button">点击阅读</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/p3.jpg" alt="3 slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>纨绔世子妃</h1>
+                    <p>纨绔世子妃：云浅月，容景</p>
+                    <p><a class="btn btn-lg btn-primary" href="http://www.wankushizifei.com/" target="_blank" role="button">点击阅读</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/p4.jpg" alt="4 slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>三生三世，十里桃花</h1>
+                    <p>三生三世，十里桃花：白浅，夜华</p>
+                    <p><a class="btn btn-lg btn-primary" href="http://www.99lib.net/book/90/" target="_blank" role="button">点击阅读</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/p5.png" alt="5 slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>凡人修仙传</h1>
+                    <p>凡人修仙传：韩立</p>
+                    <p><a class="btn btn-lg btn-primary" href="https://www.ybdu.com/xiaoshuo/13/13180/" target="_blank" role="button">点击阅读</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#ad-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ad-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+
+
+
+<!-- 主要内容 -->
+<div class="container summary">
+
+    <!-- 简介 -->
+    <div class="row summary-row" id="summary-container">
+        <div class="col-md-3">
+            <img class="img-circle" src="images/w1.jpg" alt="若烟花常在">
+            <h4>若烟花常在</h4>
+            <p>你的眼睛是我不灭的萤火，在不能归去的角落，想为你唱一首歌，还有多少风景都路过。</p>
+            <p><a class="btn btn-default" href="#" role="button">点我阅读</a></p>
+        </div>
+
+        <div class="col-md-3">
+            <img class="img-circle" src="images/w2.jpg" alt="阴阳婚">
+            <h4>阴阳婚</h4>
+            <p>爱上你，也许只是看到你的那一个瞬间，忘记你，却要用尽我整整的一生。上天待我，何其不公。</p>
+            <p><a class="btn btn-default" href="#" role="button">点我阅读</a></p>
+        </div>
+
+        <div class="col-md-3">
+            <img class="img-circle" src="images/w3.jpg" alt="种田小事">
+            <h4>种田小事</h4>
+            <p>也许，这世间最美好的爱情并不在那些轰轰烈烈、荡气回肠的传奇里，而是在这样莫逆于心的相视一笑里。</p>
+            <p><a class="btn btn-default" href="#" role="button">点我阅读</a></p>
+        </div>
+
+        <div class="col-md-3">
+            <img class="img-circle" src="images/w4.jpg" alt="婚爱，不是独守空城">
+            <h4>婚爱，不是独守空城</h4>
+            <p>有的人从你生命里路过，不管再怎么卖力表演，你想起他时也不过是一个模糊不清的符号。</p>
+            <p><a class="btn btn-default" href="#" role="button">点我阅读</a></p>
+        </div>
+    </div>
+	<br/><br/>
+
+
+	<!-- 特性 -->
+    <ul class="nav nav-tabs" role="tablist" id="feature-tab">
+        <li class="active"><a href="#tab-k1" role="tab" data-toggle="tab">古代言情</a></li>
+        <li><a href="#tab-k2" role="tab" data-toggle="tab">仙侠</a></li>
+        <li><a href="#tab-k3" role="tab" data-toggle="tab">现代言情</a></li>
+        <li><a href="#tab-k4" role="tab" data-toggle="tab">玄幻</a></li>
+        <li><a href="#tab-k5" role="tab" data-toggle="tab">穿越</a></li>
+    </ul>
+    <div class="tab-content biaoqian">
+       <!--第一个标签-->
+        <div class="tab-pane active" id="tab-k1">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading">《凤起朝歌》<span class="text-muted">作者：无央</span></h2>
+                    <p class="lead">“我用尽手段，深恩负尽，却还是失去了你”，桃花树下，少年一笑倾了天下。只是，后来他说，他早已忘记，于是她懂了，江山拱手，只余追忆。                  
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-circle pull-right" src="images/k1.jpg" alt="Chrome">
+                </div>
+            </div>
+        </div>
+        <!--第二个标签-->
+        <div class="tab-pane" id="tab-k2">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-circle" src="images/k2.jpg" alt="Firefox">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="feature-heading">《剑枭》<span class="text-muted">作者：暗林枭鸣</span></h2>
+                    <p class="lead">不一样的星辰变与盘龙世界。 魔法宇宙与仙道宇宙的惊天碰撞,整个世界从此改变。 绝对热血,让你体验一个完全不一样的仙侠与魔法的世界。 一个人,一把剑。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--第三个标签-->
+        <div class="tab-pane" id="tab-k3">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading">《蚀骨禁宠》<span class="text-muted">作者：雨落清尘</span></h2>
+                    <p class="lead">曾经我以为我们这一生很长很长，总会爱很多的人，后来才发现不管时间如何张牙爪舞，光阴如何死去活来，最后你记忆里所能铭记的爱人其实只有两个，一个他爱你，一个你爱他。
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-circle pull-right" src="images/k3.jpg" alt="Safari">
+                </div>
+            </div>
+        </div>
+        <!--第四个标签-->
+        <div class="tab-pane" id="tab-k4">
+            <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-circle" src="images/k4.jpg" alt="Opera">
+                </div>
+                <div class="col-md-7">
+                    <h2 class="feature-heading">《惊世录》<span class="text-muted">作者：圭卜</span>
+                    </h2>
+                    <p class="lead">乱古有皇，为妖，着九尺黄袍，君临天下。远古有帝，名古，似苍茫而来，踏天而立。近古称雄，名云，与九州平妖，庇佑人族。而今，一慵懒少年与绝境开启了双眸，带着一股对天地的怨，于微末中崛起，惊世！
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--第五个标签-->
+        <div class="tab-pane" id="tab-k5">
+            <div class="row feature">
+                <div class="col-md-7">
+                    <h2 class="feature-heading">《暗夜寒尊》<span class="text-muted">作者：唐小寂</span></h2>
+                    <p class="lead">一朝穿越，她二十一世纪的优秀杀手附于胎儿体内，刚出生，她母亲被杀害，母亲的丫环被毒害，母亲托付收养她的人为救她沉睡不醒。最终，她阴差阳错的成为了陵境国的小王子百里暗夜，因为无法修炼，拥有丑陋容貌的哑巴闻名于云祥大陆。当她再度被陷害，为了活下去，她锋芒毕露，傲视天下苍生,最终成就一代尊主,从此,谁与其争锋。
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-circle pull-right" src="images/k5.jpg" alt="IE">
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+
+
+    
+
+
+
+
+    <!--六个分类-->
+    <div class="six">
+        <header class="six_h">
+            <h2>晋·江·文·学·城</h2>
+            <hr align="center" width="200" color="#28004D " size="1">
+            <p>晋江文学城是中国大陆著名的女性文学网站，创立于2003年8月1日，<br />以耽美、爱情等原创网络小说而著名。主要提供由网友独立创作的小说。</p>
+        </header>
+
+        <table class="six_ul">
+            <tr class="six_tr">
+                <th class="six_th">
+                    <h3><img class="img-circle" src="images/gf/gf01.jpg" width="100" height="80">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;古代言情</h3>                   
+                    <p><a href="http://www.jjwxc.net/onebook.php?novelid=2877433">
+                    《绝色多祸害》——五叶昙（祸己不如祸人）</a></p>
+                </th>
+                <th class="six_th">
+                    <h3><img class="img-circle" src="images/gf/gf02.jpg" width="100" height="80">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幻想现言</h3>
+                    <p><a href="http://www.jjwxc.net/onebook.php?novelid=3449018">《六十年代春莺啭》——张大姑娘（画风清奇六十年代重生文）</a></p>
+                </th>
+            </tr>
+
+            <tr class="six_tr">
+                <th class="six_th">
+                    <h3><img class="img-circle" src="images/gf/gf03.jpg" width="100" height="80">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;古代穿越</h3>
+                    <p><a href="http://www.jjwxc.net/onebook.php?novelid=3442895">《农家夫妇生活》——时光再笑（夫妻双双魂穿古代重新开始生活）</a></p>
+                </th>
+                <th class="six_th">
+                    <h3><img class="img-circle" src="images/gf/gf04.jpg" width="100" height="80">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;玄幻奇幻</h3>
+                    <p><a href="http://www.jjwxc.net/onebook.php?novelid=3395675">《修真-将打脸进行大底》——古城白衣少年（怎么，以为我会抱大腿？）</a></p>
+                </th>
+            </tr>
+
+            <tr class="six_tr">
+                <th class="six_th">
+                    <h3><img class="img-circle" src="images/gf/gf05.jpg" width="100" height="80">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二次元言情</h3>
+                    <p><a href="http://www.jjwxc.net/onebook.php?novelid=3384443">《【综】神二代的我命途多舛》——清溪洗砚（霸道茨木爱上我）</a></p>
+                </th>
+                <th class="six_th">
+                    <h3><img class="img-circle" src="images/gf/gf06.jpg" width="100" height="80">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;衍生言情</h3>
+                    <p><a href="http://www.jjwxc.net/onebook.php?novelid=3434946">《【综英美】会魔法的美食家》——鲲之大（魔药与美食）</a></p>
+                </th>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- 关于 弹出框 -->
+    <div class="modal fade" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">关闭</span></button>
+                    <h4 class="modal-title" id="modal-label">关于</h4>
+                </div>
+                <div class="modal-body">
+                    <p>本站全部作品（包括小说和书评）版权为原创作者所有 本网站仅为网友写作提供上传空间储存平台。本站所收录作品、互动话题、书库评论及本站所做之广告均属其个人行为，与本站立场无关。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--底部-->
+<footer>
+    <p class="pull-right"><a href="#top">回到顶部</a></p>
+    <p>&copy; 制作人：陈雪 </p>
+</footer>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<audio autoplay="autoplay" height="100" width="100">
+  <source src="http://mp3.qqmusic.cc/yq/213198549.mp3" type="audio/mp3" />
+</audio> 
+
+</body>
+</html>
